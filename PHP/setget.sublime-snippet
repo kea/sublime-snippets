@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+public function get${1:_CAMELNAME_}() { return \$this->${2:_NAME_}; }
+public function set${1:_CAMELNAME_}(\$${2:_NAME_}) { \$this->${2:_NAME_} = \$${2:_NAME_}; }
+]]></content>
+	<tabTrigger>setget</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Gets the ${1:_NAME_}
+ */
+public function get${2:_CAMELNAME_}()
+{
+    return \$this->${1:_NAME_};
+}
+
+/**
+ * Sets the ${1:_NAME_}
+ */
+public function set${2:_CAMELNAME_}(\$${1:_NAME_})
+{
+    \$this->${1:_NAME_} = \$${1:_NAME_};
+}
+]]></content>
+	<tabTrigger>setget-cs</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
