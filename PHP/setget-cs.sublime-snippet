@@ -1,19 +1,19 @@
 <snippet>
 	<content><![CDATA[
 /**
- * Gets the ${1:_NAME_}
+ * Gets the ${1/^(.)(.*)$/\L$1\E$+/}
  */
-public function get${2:_CAMELNAME_}()
+public function get${1:CamelName}()
 {
-    return \$this->${1:_NAME_};
+    return \$this->${1/^(.)(.*)$/\L$1\E$+/};
 }
 
 /**
- * Sets the ${1:_NAME_}
+ * Sets the ${1/^(.)(.*)$/\L$1\E$+/}
  */
-public function set${2:_CAMELNAME_}(\$${1:_NAME_})
+public function set${1:CamelName}(\$${1/^(.)(.*)$/\L$1\E$+/})
 {
-    \$this->${1:_NAME_} = \$${1:_NAME_};
+    \$this->${1/^(.)(.*)$/\L$1\E$+/} = \$${1/^(.)(.*)$/\L$1\E$+/};
 }
 ]]></content>
 	<tabTrigger>setget-cs</tabTrigger>

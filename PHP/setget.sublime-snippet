@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-public function get${1:_CAMELNAME_}() { return \$this->${2:_NAME_}; }
-public function set${1:_CAMELNAME_}(\$${2:_NAME_}) { \$this->${2:_NAME_} = \$${2:_NAME_}; }
+public function get${1:CamelName}() { return \$this->${1/^(.)(.*)$/\L$1\E$+/}; }
+public function set${1:CamelName}(\$${1/^(.)(.*)$/\L$1\E$+/}) { \$this->${1/^(.)(.*)$/\L$1\E$+/} = \$${1/^(.)(.*)$/\L$1\E$+/}; }
 ]]></content>
 	<tabTrigger>setget</tabTrigger>
 	<scope>source.php</scope>
