@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+var_dump(${1:var});
+die(__METHOD__.' ('.__FILE__.' at '.__LINE__.')');
+]]></content>
+	<tabTrigger>var_dump_die</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
